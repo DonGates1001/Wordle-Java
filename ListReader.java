@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  */
 public class ListReader {
-	
+	/** length of a legal word in the game */
 	private static final int VALID_WORD_LENGTH = 5;
 	
 	/**
@@ -37,7 +37,6 @@ public class ListReader {
 			Arrays.parallelSort(wordList);
 			scan.close();
 		} catch (FileNotFoundException e) {
-			System.out.println("Invalid file name");
 			return null;
 		}
 		return wordList;
